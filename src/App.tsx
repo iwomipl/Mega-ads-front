@@ -1,23 +1,14 @@
 import React from 'react';
+import {Header} from './components/layut/Header';
+import {Map} from './components/Map/Map';
 
-import './App.css'
+import './App.css';
 
-export const  App= ()=> {
-  return (
-    <>
-      <header>
-        <h1>
-            <strong>Mega</strong> Ogłoszenia
-        </h1>
-        <button>Dodaj ogłoszenie</button>
-        <div className="search">
-          <input type="text"/>
-          <button>Szukaj</button>
-        </div>
-      </header>
-      <div className="map">
-        ...
-      </div>
-    </>
-  );
+export const App = () => {
+    return (
+        <>
+            <Header/>
+            <Map/>
+        </>
+    );
 }
